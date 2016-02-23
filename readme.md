@@ -9,29 +9,29 @@
 The files below are already created for you to give you a jumping start. Before starting you should have a look at each of them to familiarize yourself.
 
 <pre>
-── create_db.sql                                        This is the database specification, you will edit it!<br/>
-├── pom.xml                                             Project specification<br/>
-├── readme.md                                           This file<br/>
-├── src<br/>
-│   ├── main<br/>
-│   │   └── java<br/>
-│   │       └── se<br/>
-│   │           └── jonananas<br/>
-│   │               └── tdd<br/>
-│   │                   ├── JDBCRunner.java             Helper class for running querys.<br/>
-│   │                   ├── Person.java                 Minimal implementation, you will edit it!<br/>
-│   │                   ├── PersonRepository.java       Minimal implementation, you will edit it!<br/>
-│   │                   ├── PersonRepositoryJDBC.java   Minimal implementation, you will edit it!<br/>
-│                       └── SQLFunction.java            Interface used to specify JDBC Runner.<br/>
-│   └── test<br/>
-│       └── java<br/>
-│           └── se<br/>
-│               └── jonananas<br/>
-│                   └── tdd<br/>
-│                       ├── H2TestDataSource.java           Sets up a H2 in-memory database<br/>
-│                       ├── JDBCRunnerTest.java             Tests the JDBC Runner<br/>
-│                       ├── PersonRepositoryJDBCTest.java   Minimal implementation, you will edit it!<br/>
-│                       └── PersonTest.java                 Minimal implementation, you will edit it!<br/>
+── create_db.sql                                        This is the database specification, you will edit it!
+├── pom.xml                                             Project specification
+├── readme.md                                           This file
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── se
+│   │           └── jonananas
+│   │               └── tdd
+│   │                   ├── JDBCRunner.java             Helper class for running querys.
+│   │                   ├── Person.java                 Minimal implementation, you will edit it!
+│   │                   ├── PersonRepository.java       Minimal implementation, you will edit it!
+│   │                   ├── PersonRepositoryJDBC.java   Minimal implementation, you will edit it!
+│                       └── SQLFunction.java            Interface used to specify JDBC Runner.
+│   └── test
+│       └── java
+│           └── se
+│               └── jonananas
+│                   └── tdd
+│                       ├── H2TestDataSource.java           Sets up a H2 in-memory database
+│                       ├── JDBCRunnerTest.java             Tests the JDBC Runner
+│                       ├── PersonRepositoryJDBCTest.java   Minimal implementation, you will edit it!
+│                       └── PersonTest.java                 Minimal implementation, you will edit it!
 </pre>
 
 ## The kata
