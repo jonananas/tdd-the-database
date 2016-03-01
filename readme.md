@@ -18,24 +18,24 @@ The files below are already created for you to give you a jumping start. Before 
 │   │       └── se
 │   │           └── jonananas
 │   │               └── tdd
-│   │                   ├── JDBCRunner.java             Helper class for running querys.
+│   │                   ├── JDBCRunner.java             Helper class for running queries. Needs no edits.
 │   │                   ├── Person.java                 Minimal implementation, you will edit it!
 │   │                   ├── PersonRepository.java       Minimal implementation, you will edit it!
 │   │                   ├── PersonRepositoryJDBC.java   Minimal implementation, you will edit it!
-│                       └── SQLFunction.java            Interface used to specify JDBC Runner.
+│                       └── SQLFunction.java            Interface used to specify JDBC Runner. Needs no edits.
 │   └── test
 │       └── java
 │           └── se
 │               └── jonananas
 │                   └── tdd
-│                       ├── H2TestDataSource.java           Sets up a H2 in-memory database
-│                       ├── JDBCRunnerTest.java             Tests the JDBC Runner
+│                       ├── H2TestDataSource.java           Sets up a H2 in-memory database. Needs no edits.
+│                       ├── JDBCRunnerTest.java             Tests the JDBC Runner. Needs no edits.
 │                       ├── PersonRepositoryJDBCTest.java   Minimal implementation, you will edit it!
 │                       └── PersonTest.java                 Minimal implementation, you will edit it!
 </pre>
 
 ## The kata
-Steps marked DONE are done to give you a head start. You should not edit 
+Steps marked DONE are implemented already to give you a head start. Feel free to remove all classes if you think it's to easy!
 
 1. Add name to Person, updating the factory method.
 2. Two persons should only be equal when id matches. There can be two John Doe without them being the same person.
