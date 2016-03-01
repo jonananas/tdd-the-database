@@ -1,9 +1,11 @@
 # TDD the database
 
 ## Rules
-* First create a test, then just enough to pass the test
-* Try to take baby steps, create the simplest next test possible
-* Do not forget to refactor
+* Take baby steps:
+* Create the simplest test possible.
+* Then the minimal implementation to pass the test.
+* Refactor.
+* Refactor test code as well!
 
 ## Before starting
 The files below are already created for you to give you a jumping start. Before starting you should have a look at each of them to familiarize yourself.
