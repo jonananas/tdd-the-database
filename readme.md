@@ -49,7 +49,7 @@ Steps marked DONE are done to give you a head start. You should not edit
 10. You should be able to sort on only name, only gender or both.
 
 ## Ending notes
-- You might recognize that patterns in this kata comes from Domain Driven Design. If you do not know what DDD is, read up on it! It takes time, but is worth it! 
+- You might recognize that patterns in this kata comes from Domain Driven Design. If you do not know what DDD is, [read up on it](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)! It takes time, but is worth it! 
 - All classes are in same package for convenience. They really shouldn't be in a real project.
 - RuntimeException is a good thing, but even better is defining your own and throw those for clarity.
 - We are using UUID as ID for Person, but we could as well use an alternative, like a database sequenced id.
