@@ -8,7 +8,7 @@
 * Refactor test code as well!
 
 ## Before starting
-The files below are already created for you to give you a jumping start. Before starting you should have a look at each of them to familiarize yourself.
+The files and structure below are already created for you. Before starting you should have a look at each of them to familiarize yourself.
 
 <pre>
 ── create_db.sql                                        This is the database specification, you will edit it!
