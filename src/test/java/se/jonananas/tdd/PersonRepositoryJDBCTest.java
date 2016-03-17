@@ -1,5 +1,7 @@
 package se.jonananas.tdd;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import java.sql.SQLException;
 
 import javax.enterprise.inject.Produces;
@@ -44,6 +46,7 @@ public class PersonRepositoryJDBCTest {
 	public void shouldFindPerson() throws Exception {
 		Person person = Person.create();
 		repo.store(person);
-		repo.findById(person.getId());
+		Person found = repo.findById(person.getId());
+		assertThat(found).isEqualTo(person);
 	}
 }

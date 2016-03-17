@@ -4,5 +4,5 @@ public interface PersonRepository {
 
 	public void store(Person person);
 
-	public void findById(String id);
+	public Person findById(String id);
 }

@@ -1,8 +1,6 @@
 package se.jonananas.tdd;
 
 import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.inject.Inject;
 import javax.sql.DataSource;
@@ -32,17 +30,14 @@ public class PersonRepositoryJDBC implements PersonRepository {
 	}
 
 	@Override
-	public void findById(String id) {
+	public Person findById(String id) {
 		String sql = "SELECT * FROM appschema.person WHERE id = ?";
 
-		runQuery(sql.toString(), ds, statement -> {
+		return runQuery(sql.toString(), ds, statement -> {
 			statement.setObject(1, id);
-			List<Person> result = new ArrayList<Person>();
 			ResultSet rs = statement.executeQuery();
-			while (rs.next()) {
-				result.add(new Person(rs.getString("id")));
-			}
-			return result;
+			rs.next();
+			return new Person(rs.getString("id"));
 		});
 	}
 
