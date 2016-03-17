@@ -1,4 +1,5 @@
 # TDD the database
+You need JDK1.8+ to build. If you are using JAVA_HOME, make sure it is pointing at a JDK1.8. 
 
 ## Rules
 * Take baby steps:
