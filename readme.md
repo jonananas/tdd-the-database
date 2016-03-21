@@ -56,4 +56,4 @@ Steps marked DONE are implemented already to give you a head start. Feel free to
 - All classes are in same package for convenience. They really shouldn't be in a real project.
 - RuntimeException is a good thing, but even better is defining your own and throw those for clarity.
 - We are using UUID as ID for Person, but we could as well use an alternative, like a database sequenced id.
-- Tools like [LiquiBase](http://www.liquibase.org/) and [Flyway](https://flywaydb.org) are great for evolving your database together with your code.
+- Tools like [LiquiBase](http://www.liquibase.org/) and [Flyway](https://flywaydb.org/getstarted/how) are great for evolving your database together with your code.
