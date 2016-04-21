@@ -1,4 +1,4 @@
-package se.jonananas.tdd;
+package se.jonananas.tdd.jpaprovider;
 
 import java.util.Map;
 
