@@ -2,9 +2,18 @@ package se.jonananas.tdd;
 
 import java.util.UUID;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Person {
 
+	@Id
 	String id;
+	
+	protected Person() {
+		// Needed by JPA
+	}
 
 	Person(String uniqueId) {
 		this.id = uniqueId;
