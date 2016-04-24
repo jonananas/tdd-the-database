@@ -1,5 +1,8 @@
 # TDD the database
-You need JDK1.8+ to build. If you are using JAVA_HOME, make sure it is pointing at a JDK1.8. 
+
+## Installation
+Import as a maven project into your favorite IDE and you should be up and running!
+You need JDK1.8+ to build though. If you are using JAVA_HOME, make sure it is pointing at a JDK1.8. 
 
 ## Rules
 * Take baby steps:
@@ -50,6 +53,13 @@ Steps marked DONE are implemented already to give you a head start. Feel free to
 8. You should be able to specify starting person as well, to enable paging.
 9. Add gender to a person.
 10. You should be able to sort on only name, only gender or both.
+
+## Branches/Implementations
+The master branch contains both JPA, JDBC and an in-memory implementation!
+If you only want to perform the kata on one at a time, just add an @Ignore annotation to the corresponding test class that you want to ignore.
+You can also delete code of course!
+
+There is also a git branch called jdbc-only that you can checkout.
 
 ## Ending notes
 - You might recognize that patterns in this kata comes from Domain Driven Design. If you do not know what DDD is, [read up on it](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)! It takes time, but is worth it! 
