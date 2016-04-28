@@ -47,6 +47,7 @@ Steps marked DONE are implemented already to give you a head start. Feel free to
 2. Create a PersonRepository interface and a PersonRepositoryJDBC that allows you to store a person using H2. DONE!
 3. You should be able to find a person by id. DONE!
 4. Add name to Person, updating the factory method. Will force you to update schema!
+   NOTE: Step 1 made it impossible to use equals for complete person!
 5. You should be able to find persons by name. If John Doe and Jane Doe exists, searching for "do" should return both. Searching for john should return one.
 6. The repository should be able to returned a sorted list on name. Both ascending and descending.
 7. You should be able to specify number of returned persons using a maximum limit.
