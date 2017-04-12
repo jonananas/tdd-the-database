@@ -1,5 +1,8 @@
 # TDD the database
-You need JDK1.8+ to build. If you are using JAVA_HOME, make sure it is pointing at a JDK1.8. 
+
+## Installation
+Import as a maven project into your favorite IDE and you should be up and running!
+You need JDK1.8+ to build though. If you are using JAVA_HOME, make sure it is pointing at a JDK1.8. 
 
 ## Rules
 * Take baby steps:
@@ -40,17 +43,18 @@ The files and structure below are already created for you. Before starting you s
 ## The kata
 Steps marked DONE are implemented already to give you a head start. Feel free to remove all classes if you think it's to easy!
 
-1. Add name to Person, updating the factory method.
-2. Two persons should only be equal when id matches. There can be two John Doe without them being the same person.
-3. A persons name should be stored in database.
-4. Create a PersonRepository interface and a PersonRepositoryJDBC that allows you to store a person using H2. DONE!
-5. You should be able to find a person by id. DONE!
-6. You should be able to filter persons by name. If John Doe and Jane Doe exists, search for do should return both. Searching for john should return one.
-7. The repository should be able to return a sorted list on name. Both ascending and descending.
-8. You should be able to specify number of returned persons using a maximum limit.
-9. You should be able to specify starting person as well, to enable paging.
-10. Add gender to a person.
-11. You should be able to sort on only name, only gender or both.
+1. Two persons should only be equal when id matches. There can be two John Doe without them being the same person. DONE!
+2. Create a PersonRepository interface and a PersonRepositoryJDBC that allows you to store a person using H2. DONE!
+3. You should be able to find a person by id. DONE!
+4. Add name to Person, updating the factory method. (Do not update repository just yet - take baby steps!) 
+5. A persons name should be stored in database. Will force you to update schema!
+   NOTE: Step 1 made person.equals only check for id, so you cannot use Person.equals
+5. You should be able to find persons by name. If John Doe and Jane Doe exists, searching for "do" should return both. Searching for john should return one.
+6. The repository should be able to returned a sorted list on name. Both ascending and descending.
+7. You should be able to specify number of returned persons using a maximum limit.
+8. You should be able to specify starting person as well, to enable paging.
+9. Add gender to a person.
+10. You should be able to sort on only name, only gender or both.
 
 ## Ending notes
 - You might recognize that patterns in this kata comes from Domain Driven Design. If you do not know what DDD is, [read up on it](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)! It takes time, but is worth it! 
