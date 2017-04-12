@@ -49,8 +49,8 @@ Steps marked DONE are implemented already to give you a head start. Feel free to
 4. Add name to Person, updating the factory method. (Do not update repository just yet - take baby steps!) 
 5. A persons name should be stored in database. Will force you to update schema!
    NOTE: Step 1 made person.equals only check for id, so you cannot use Person.equals
-5. You should be able to find persons by name. If John Doe and Jane Doe exists, searching for "do" should return both. Searching for john should return one.
-6. The repository should be able to returned a sorted list on name. Both ascending and descending.
+5. You should be able to filter persons by name. If John Doe and Jane Doe exists, filtering for "do" should return both. Filtering for john should return one.
+6. The repository should be able to return a sorted list on name. Both ascending and descending.
 7. You should be able to specify number of returned persons using a maximum limit.
 8. You should be able to specify starting person as well, to enable paging.
 9. Add gender to a person.
