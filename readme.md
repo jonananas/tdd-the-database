@@ -42,14 +42,15 @@ Steps marked DONE are implemented already to give you a head start. Feel free to
 
 1. Add name to Person, updating the factory method.
 2. Two persons should only be equal when id matches. There can be two John Doe without them being the same person.
-3. Create a PersonRepository interface and a PersonRepositoryJDBC that allows you to store a person using H2. DONE!
-4. You should be able to find a person by id. DONE!
-5. You should be able to filter persons by name. If John Doe and Jane Doe exists, search for do should return both. Searching for john should return one.
-6. The repository should be able to returned a sorted list on name. Both ascending and descending.
-7. You should be able to specify number of returned persons using a maximum limit.
-8. You should be able to specify starting person as well, to enable paging.
-9. Add gender to a person.
-10. You should be able to sort on only name, only gender or both.
+3. A persons name should be stored in database.
+4. Create a PersonRepository interface and a PersonRepositoryJDBC that allows you to store a person using H2. DONE!
+5. You should be able to find a person by id. DONE!
+6. You should be able to filter persons by name. If John Doe and Jane Doe exists, search for do should return both. Searching for john should return one.
+7. The repository should be able to return a sorted list on name. Both ascending and descending.
+8. You should be able to specify number of returned persons using a maximum limit.
+9. You should be able to specify starting person as well, to enable paging.
+10. Add gender to a person.
+11. You should be able to sort on only name, only gender or both.
 
 ## Ending notes
 - You might recognize that patterns in this kata comes from Domain Driven Design. If you do not know what DDD is, [read up on it](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)! It takes time, but is worth it! 
