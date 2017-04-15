@@ -18,7 +18,7 @@ public class PersonRepositoryJDBCTest extends PersonRepositoryTest {
 
 	@Produces
 	public DataSource provideDataSource() {
-		return H2TestDataSource.createH2MemDataSource("create_db.sql");
+		return H2TestDataSource.createH2FlywayDataSource();
 	}
 
 	@Inject

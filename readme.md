@@ -2,7 +2,13 @@
 
 ## Installation
 Import as a maven project into your favorite IDE and you should be up and running!
-You need JDK1.8+ to build though. If you are using JAVA_HOME, make sure it is pointing at a JDK1.8. 
+You need JDK1.8+ to build though. If you are using JAVA_HOME, make sure it is pointing at a JDK1.8.
+
+## Flyway branch
+This branch uses Flyway to update the schema. EACH STEP IN KATA SHOULD RENDER A NEW MIGRATION VERSION!
+Flyway integrates easily with JDBC, for example you can use a DataSourceProvider to inject datasource after flyway has migrated it.
+With JPA it's not that easy. In <http://www.hascode.com/2013/04/easy-database-migrations-using-flyway-java-ee-6-and-glassfish/#Persistence_Layer__JPA> a Singleton is used which collects the datasource and migrates it, not sure if that's safe and if it would work with letting JPA validate the schema. 
+The singleton doesn't help when TDD:ing the solution either, we need a way to access the datasource preferably before JPA get's hold of it. That does not seem to be possible in production, but when testing we simply let Flyway access the datasource before creating EntityManager.    
 
 ## Rules
 * Take baby steps:

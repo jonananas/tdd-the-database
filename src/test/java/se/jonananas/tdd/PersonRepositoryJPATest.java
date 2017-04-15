@@ -4,6 +4,7 @@ import javax.enterprise.inject.Produces;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 
+import org.flywaydb.core.Flyway;
 import org.jglue.cdiunit.AdditionalClasses;
 import org.jglue.cdiunit.CdiRunner;
 import org.junit.After;
@@ -26,6 +27,7 @@ public class PersonRepositoryJPATest extends PersonRepositoryTest {
 	@Produces
 	public EntityManager provideEM() {
 		if (this.em == null) {
+			updateSchema();
 			setupEM();
 		}
 		return this.em;
@@ -35,6 +37,13 @@ public class PersonRepositoryJPATest extends PersonRepositoryTest {
 		this.sessionEm = new EntityManagerProviderImpl("H2SQLPU");
 		this.em = sessionEm.createEntityManager();
 		this.sessionEm.beginTransaction();
+	}
+
+	private void updateSchema() {
+		Flyway flyway = new Flyway();
+		// TODO: From persistence.xml, maven-filter this to create common source?
+		flyway.setDataSource("jdbc:h2:mem:unit-testing-jpa", "sa", "sa");
+		flyway.migrate();
 	}
 
 	@After
