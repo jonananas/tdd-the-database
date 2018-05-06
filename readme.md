@@ -2,7 +2,7 @@
 
 ## Installation
 Import as a maven project into your favorite IDE and you should be up and running!
-You need JDK1.8+ to build though. If you are using JAVA_HOME, make sure it is pointing at a JDK1.8. 
+You need JDK1.8 to build. JDK9 DOES NOT WORK! If you are using JAVA_HOME, make sure it is pointing at a JDK1.8. 
 
 ## Rules
 * Take baby steps:
@@ -69,3 +69,6 @@ There is also a git branch called jdbc-only that you can checkout.
 - RuntimeException is a good thing, but even better is defining your own and throw those for clarity.
 - We are using UUID as ID for Person, but we could as well use an alternative, like a database sequenced id.
 - Tools like [LiquiBase](http://www.liquibase.org/) and [Flyway](https://flywaydb.org/getstarted/how) are great for evolving your database together with your code.
+
+## TODO
+- Support Java 9
